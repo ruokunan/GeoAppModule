@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 
         map  = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 
-        //map.addMarker(new MarkerOptions().position(LOCATION_SURRREY).title("Find me here!"));
+       map.addMarker(new MarkerOptions().position(LOCATION_UW).title("UW is AweSome"));
     }
 //
 //    @Override
