@@ -2,7 +2,6 @@ package edu.washington.ruokua.geoappmodule;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -11,6 +10,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
 
 public class MainActivity extends Activity {
     private final LatLng LOCATION_UW = new LatLng(47.6550, -122.3080);
@@ -49,8 +49,8 @@ public class MainActivity extends Activity {
     }
     public void onClick_Surrey(View v) {
         map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-       // CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_SURRREY, 16);
-       // map.animateCamera(update);
+       CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_SURRREY, 16);
+       map.animateCamera(update);
 
     }
 
