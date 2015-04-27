@@ -14,7 +14,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MainActivity extends Activity {
     private final LatLng LOCATION_UW = new LatLng(47.6550, -122.3080);
-    //private final LatLng LOCATION_SURRREY = new LatLng(49.187500, -122.849000);
+    private final LatLng LOCATION_SURRREY = new LatLng(49.187500, -122.849000);
 
     private GoogleMap map;
 
